@@ -19,6 +19,7 @@
         <activity android:name=".activity.SuperCircleSample"></activity>
         <activity android:name=".activity.LineChartActivity"></activity>
         <activity android:name=".psddialog.DialogActivity"></activity>
+        <activity android:name=".transparentdialog.TransparentDialog"></activity>
     </application>
 
 </manifest>

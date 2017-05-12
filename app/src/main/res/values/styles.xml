@@ -13,4 +13,12 @@
         <item name="android:windowBackground">@color/transparent</item>
     </style>
 
+
+    <style name="update_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/transpant_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
 </resources>

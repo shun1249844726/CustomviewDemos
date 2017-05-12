@@ -16,11 +16,13 @@ import android.widget.TextView;
 import com.lexinsmart.xushun.customviewdemos.activity.LineChartActivity;
 import com.lexinsmart.xushun.customviewdemos.activity.SuperCircleSample;
 import com.lexinsmart.xushun.customviewdemos.psddialog.DialogActivity;
+import com.lexinsmart.xushun.customviewdemos.transparentdialog.TransparentDialog;
 import com.lexinsmart.xushun.customviewdemos.views.SuperCircle;
+import com.sdsmdg.tastytoast.TastyToast;
 
 public class MainActivity extends AppCompatActivity {
     String TAG = "MainActivity";
-    private String[] mListItems = {"SuperCircleSample", "LineChartView","psdDialog"};
+    private String[] mListItems = {"SuperCircleSample", "LineChartView","psdDialog","transparentDialog"};
     private LayoutInflater mLayoutInflater;
 
     private ListView mListView;
@@ -47,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                     case "psdDialog":
                         activity = DialogActivity.class;
                         break;
+                    case "transparentDialog":
+                        activity = TransparentDialog.class;
                     default:
                         break;
                 }
@@ -57,6 +61,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        TastyToast.makeText(getApplicationContext(), "Hello World !", TastyToast.LENGTH_SHORT, TastyToast.SUCCESS);
+
     }
 
     private class ListAdapter extends BaseAdapter {
