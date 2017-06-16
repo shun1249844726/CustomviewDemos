@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import com.lexinsmart.xushun.customviewdemos.activity.LineChartActivity;
 import com.lexinsmart.xushun.customviewdemos.activity.SuperCircleSample;
+import com.lexinsmart.xushun.customviewdemos.activity.TickingClock;
 import com.lexinsmart.xushun.customviewdemos.psddialog.DialogActivity;
 import com.lexinsmart.xushun.customviewdemos.transparentdialog.TransparentDialog;
 import com.lexinsmart.xushun.customviewdemos.views.SuperCircle;
@@ -22,7 +23,7 @@ import com.sdsmdg.tastytoast.TastyToast;
 
 public class MainActivity extends AppCompatActivity {
     String TAG = "MainActivity";
-    private String[] mListItems = {"SuperCircleSample", "LineChartView","psdDialog","transparentDialog"};
+    private String[] mListItems = {"SuperCircleSample", "LineChartView","psdDialog","transparentDialog","tickClock"};
     private LayoutInflater mLayoutInflater;
 
     private ListView mListView;
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case "transparentDialog":
                         activity = TransparentDialog.class;
+                        break;
+                    case "tickClock":
+                        activity = TickingClock.class;
                     default:
                         break;
                 }

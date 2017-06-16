@@ -20,6 +20,7 @@
         <activity android:name=".activity.LineChartActivity"></activity>
         <activity android:name=".psddialog.DialogActivity"></activity>
         <activity android:name=".transparentdialog.TransparentDialog"></activity>
+        <activity android:name=".activity.TickingClock"></activity>
     </application>
 
 </manifest>

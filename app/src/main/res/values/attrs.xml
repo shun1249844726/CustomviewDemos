@@ -6,4 +6,7 @@
         <attr name="lineColor" format="color"/>
         <attr name="pointColor" format="color"/>
     </declare-styleable>
+    <declare-styleable name="TickingClockView">
+        <attr name="bgColor" format="color"/>
+    </declare-styleable>
 </resources>
